@@ -91,8 +91,7 @@ gallery.addEventListener("click", (event) => {
   const source = event.target.dataset.source;
 
   const instance = basicLightbox.create(`
-      <img src="${source}" width="800" height="600">
-    `);
+  <img src="${source}" alt="${event.target.alt}" style="width: 1112px; height: 640px;">    `);
 
   instance.show();
 });
